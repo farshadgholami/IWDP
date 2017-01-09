@@ -24,7 +24,7 @@ import java.util.ArrayList;
  */
 public class BatchRun {
 
-    private static int RANDOM_PARAMETER_PASSES= 10;
+    private static int RANDOM_PARAMETER_PASSES= 100;
     private static int AGENTS_NUM = 500;
     private static int ITERATION_NUM =100;
     private static int RUNS_NUM = 100;
@@ -33,8 +33,8 @@ public class BatchRun {
 //    ITERATION_NUM =100;
 //    RUNS_NUM = 100;
 
-//    static Formula formulas[] = {new F1(), new F2(), new F3(), new F4(), new F5(), new F6(), new F7(), new F8(), new F9(), new F10()};
-    private static Formula formulas[] = {new F5(), new F6()};
+    static Formula formulas[] = {new F1(), new F2(), new F3(), new F4(), new F5(), new F6(), new F7(), new F8(), new F9(), new F10()};
+//    private static Formula formulas[] = {new F5(), new F6()};
     private static boolean confs[][] ={{false,false},{true,false},{false,true},{true,true}};
     private static String logDir;
     private static Result bestResultsIWDP[] = new Result[formulas.length];
